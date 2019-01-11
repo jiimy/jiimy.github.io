@@ -4,34 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>이경주 이력서</title>
+  <title>깃 블로그 이력서 - 이경주</title>
+  <link rel="stylesheet" href="./dist/css/normalize.css">
+  <link rel="stylesheet" href="./dist/css/rest.css">
   <link rel="stylesheet" href="./dist/css/index.css">
 </head>
 <body>
-  <section class="profil">
-    <img src="" alt="">
-    <h1>이경주</h1>
-    <ul>
-      <li>rudwnok123@naver.com</li>
-      <li>010-3563-4596</li>
-      <li><a href="https://github.com/jimmy" target="_blank">https://github.com/jimmy</a></li>
-      <li><a href="http://jiimy.github.io" target="_blank">http://jiimy.github.io/</a></li>
-    </ul>
+  <p class="update-date">최종 업데이트 날짜 : 2019-01-</p>
+  <section class="profile">
+    <img src="" alt="내 사진" class="profile__personimg">
+    <div class="profile__personinfo">
+      <h1>이경주</h1>
+      <ul>
+        <li>rudwnok123@naver.com</li>
+        <li>010-3563-4596</li>
+        <li><a href="https://github.com/jimmy" target="_blank">https://github.com/jimmy</a></li>
+        <li><a href="http://jiimy.github.io" target="_blank">http://jiimy.github.io/</a></li>
+      </ul>
+    </div>
   </section>
 
   <section class="introduce">
     <h3>introduce</h3>
     <p>소개 한마디</p>
   </section>
-
+ 
   <section class="skills">
-    <h3></h3>
+    <h3>skills <span>?</span></h3>
+    <!-- 1. 접한적있음.
+    2. 공부중.
+    3. 실무 사용 가능.
+    4. 타인에게 설명 가능.
+    -->
     <dl>
       <dt>Front-end</dt>
-      <dd></dd>
+      <dd><span class="skill-2"></span>React.js</dd>
+      <dd><span class="skill-2"></span>Javascript</dd>
+      <dd><span class="skill-3"></span>Jquery</dd>
+
+      <dt>Etc</dt>
+      <dd><span class="skill-4"></span>vscode</dd>
+      <dd><span class="skill-3"></span>atom</dd>
+      <dd><span class="skill-3"></span>git / github / gitlab</dd>
+      <dd><span class="skill-3"></span>JIRA</dd>
+      <dd><span class="skill-3"></span>slack</dd>
+      <dd><span class="skill-1"></span>Typescript</dd>
+      <dd><span class="skill-3"></span>gulp</dd>
+      <dd><span class="skill-4"></span>sass / scss</dd>
+      <dd><span class="skill-1"></span>Zeplin</dd>
     </dl>
   </section>
 
+  <!-- 회사에서의 실업무 -->
   <section class="experience">
     <h3>experience</h3>
     <dl>
@@ -39,18 +63,69 @@
       <dd>
         <strong>이롬 테크놀로지</strong>
         <em>솔루션 담당 퍼블리셔</em>
-
         <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+          <li><a href="">sk브로드밴드 (크롬에서 보안해제)</a></li>
+          <li><a href="">jtbc 마라톤</a></li>
+          <li><a href="">가족나무 솔루션 웹페이지</a></li>
         </ul>
+      </dd>
+
+      <dt>2018.01. ~ 2018. 03</dt>
+      <dd>
+        <strong>EPPN</strong>
+        <em>퍼블리셔</em>
+        <ul>
+          <li>하이투자증권 2018. 02월분</li>
+          <li>모바일 퍼블리싱</li>
+        </ul>
+      </dd>
+
+      <dt>2017. 05 ~ 2017. 10</dt>
+      <dd>
+        <strong>세희에스앤디</strong>
+        <em>디자인 + 퍼블</em>
+        <ul>
+          <li>조일바둑</li>
+          <li><a href="#">미생물육성산업진흥센터</a></li>
+          <li><a href="">옥동석재산업</a></li>
+          <li><a href="">팔복</a></li>
+          <li>조일바둑</li>
+        </ul>
+      </dd>
+    </dl>
+    <div class="experience__useskill">
+      <strong>Skill keywords</strong>
+      <span>flex</span>
+      <span>flex</span>
+    </div>
+  </section>
+
+  <!-- 회사 업무 및 개인 플젝 -->
+  <section class="projects">
+    <h3>projects</h3>
+    <dl>
+      <dt>2018.04 ~ 2018. 07</dt>
+      <dd>
+        <strong>가족나무 웹서비스</strong>
+        <em>이롬 테크놀로지</em>
+        <ul></ul>
       </dd>
     </dl>
   </section>
 
-  <section class="skill">
 
+  <section class="education">
+    <h3>education</h3>
+    <dl>
+      <dt>2010. 03 ~ 2017. 02</dt>
+      <dd>군산대학교 수료</dd>
+      <p>컴퓨터정보공학 전공</p>
+    </dl>
+    <dl>
+      <dt>2007. 03 ~ 2010. 02</dt>
+      <dd>제일고등학교 졸업</dd>;
+      <p>전라북도 전주시</p>
+    </dl>
   </section>
 </body>
 </html>
