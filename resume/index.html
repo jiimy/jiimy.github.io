@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>깃 블로그 이력서 - 이경주</title>
+  <title>이력서 - 이경주</title>
   <link rel="stylesheet" href="./dist/css/normalize.css">
-  <link rel="stylesheet" href="./dist/css/rest.css">
+  <link rel="stylesheet" href="./dist/css/reset.css">
+  <!-- <link rel="stylesheet" href="./dist/css/font.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
   <link rel="stylesheet" href="./dist/css/index.css">
 </head>
+
 <body>
   <p class="update-date">최종 업데이트 날짜 : 2019-01-</p>
   <section class="profile">
-    <img src="" alt="내 사진" class="profile__personimg">
-    <div class="profile__personinfo">
-      <h1>이경주</h1>
-      <ul>
+    <img src="" alt="내 사진" class="profile__img">
+    <div class="profile__info">
+      <h1 class="profile__title">이 경 주</h1>
+      <ul class="profile__list">
         <li>rudwnok123@naver.com</li>
         <li>010-3563-4596</li>
         <li><a href="https://github.com/jimmy" target="_blank">https://github.com/jimmy</a></li>
@@ -28,34 +32,40 @@
     <h3>introduce</h3>
     <p>소개 한마디</p>
   </section>
- 
+
   <section class="skills">
-    <h3>skills <span>?</span></h3>
-    <!-- 1. 접한적있음.
-    2. 공부중.
-    3. 실무 사용 가능.
-    4. 타인에게 설명 가능.
-    -->
+    <h3 class="skills__title">skills
+      <a href="" class="tooltip">?
+        <span class="tooltip__area">
+          1. 접한 적 있음(이론).
+          2. 공부 중.
+          3. 실무 사용 가능.
+          4. 타인에게 설명 가능.
+        </span>
+      </a>
+    </h3>
     <dl>
       <dt>Front-end</dt>
       <dd><span class="skill-2"></span>React.js</dd>
       <dd><span class="skill-2"></span>Javascript</dd>
       <dd><span class="skill-3"></span>Jquery</dd>
+      <dd><span class="skill-1"></span>Typescript</dd>
 
       <dt>Etc</dt>
+      <dd><span class="skill-1"></span>Oop</dd>
+      <dd><span class="skill-1"></span>Functional programing</dd>
+      <dd><span class="skill-1"></span>TDD</dd>
       <dd><span class="skill-4"></span>vscode</dd>
       <dd><span class="skill-3"></span>atom</dd>
       <dd><span class="skill-3"></span>git / github / gitlab</dd>
       <dd><span class="skill-3"></span>JIRA</dd>
       <dd><span class="skill-3"></span>slack</dd>
-      <dd><span class="skill-1"></span>Typescript</dd>
       <dd><span class="skill-3"></span>gulp</dd>
-      <dd><span class="skill-4"></span>sass / scss</dd>
-      <dd><span class="skill-1"></span>Zeplin</dd>
+      <dd><span class="skill-3"></span>sass / scss</dd>
+      <dd><span class="skill-2"></span>Zeplin</dd>
     </dl>
   </section>
 
-  <!-- 회사에서의 실업무 -->
   <section class="experience">
     <h3>experience</h3>
     <dl>
@@ -63,10 +73,22 @@
       <dd>
         <strong>이롬 테크놀로지</strong>
         <em>솔루션 담당 퍼블리셔</em>
-        <ul>
-          <li><a href="">sk브로드밴드 (크롬에서 보안해제)</a></li>
-          <li><a href="">jtbc 마라톤</a></li>
-          <li><a href="">가족나무 솔루션 웹페이지</a></li>
+        <ul class="experience__project">
+          <li>sk브로드밴드 (크롬에서 보안해제)<a href="https://hnsdirectmall.com" target="_blank" class="link-site">바로가기</a>
+            <p class="working-period">2018.08 ~ 2018.09</p>
+            <ul class="experience__spec">
+              <li><strong>skills</strong></li>
+              <li>mCustomScrollbar.concat.min.js (스크롤바 커스텀)</li>
+              <li>bxslider.min.js</li>
+            </ul>
+          </li>
+          <li>jtbc 마라톤<a href="http://marathon.jtbc.com/" class="link-site" target="_blank">바로가기</a>
+            <ul class="experience__spec">
+              <li><strong>skills</strong></li>
+              <li>youtube</li>
+            </ul>
+          </li>
+          <li>가족나무 솔루션 웹페이지<a href="http://familytrees.koreastudy.or.kr/" target="_blank">바로가기</a></li>
         </ul>
       </dd>
 
@@ -75,8 +97,8 @@
         <strong>EPPN</strong>
         <em>퍼블리셔</em>
         <ul>
-          <li>하이투자증권 2018. 02월분</li>
-          <li>모바일 퍼블리싱</li>
+          <li>하이투자증권 2018. 02월분<a href="#"></a></li>
+          <li>모바일 퍼블리싱<a href="#"></a></li>
         </ul>
       </dd>
 
@@ -85,32 +107,31 @@
         <strong>세희에스앤디</strong>
         <em>디자인 + 퍼블</em>
         <ul>
-          <li>조일바둑</li>
-          <li><a href="#">미생물육성산업진흥센터</a></li>
-          <li><a href="">옥동석재산업</a></li>
-          <li><a href="">팔복</a></li>
+          <li>팔복예술공장<a href="http://www.palbokart.kr/" class="link-site">바로가기</a></li>
+          <li>전라북도 착한가격업소 접근성 <a href="http://jbgoodprice.jeonbuk.go.kr/" class="link-site">바로가기</a></li>
+          <li>미생물육성산업진흥센터<a href="http://www.cialm.or.kr/" class="link-site" target="_blank">바로가기</a></li>
+          <li>옥동석재산업<a href="http://www.okdong.co.kr/" class="link-site" target="_blank">바로가기</a></li>
           <li>조일바둑</li>
         </ul>
       </dd>
     </dl>
-    <div class="experience__useskill">
-      <strong>Skill keywords</strong>
-      <span>flex</span>
-      <span>flex</span>
-    </div>
   </section>
 
-  <!-- 회사 업무 및 개인 플젝 -->
+  <!-- 개인 플젝 -->
   <section class="projects">
     <h3>projects</h3>
     <dl>
-      <dt>2018.04 ~ 2018. 07</dt>
+      <dt>2017.05 ~ </dt>
       <dd>
-        <strong>가족나무 웹서비스</strong>
-        <em>이롬 테크놀로지</em>
-        <ul></ul>
+        <strong>링크 사전</strong>
+        <p>저음 일을 시작한 이후로 공부할때 참고했던 사이트들을 정리 했습니다. 분야 별 종류별로 정리해 놓았고, 현재도 도움이 되는 it정보들을 계속 추가 중입니다. <a href="#" class="link=site">바로가기</a></p>
       </dd>
     </dl>
+    <!-- <dt>2019.01 ~ </dt>
+    <dd>
+      <strong>movie-app</strong>
+      <p>firebase로 배포 테스트만 해본 react app입니다. 기획만 되어있고, </p>
+    </dd> -->
   </section>
 
 
@@ -126,6 +147,15 @@
       <dd>제일고등학교 졸업</dd>;
       <p>전라북도 전주시</p>
     </dl>
+    <div class="education_Seminar">
+      <strong>etc</strong>
+      <ul>
+        <li>페이스북 이노베이션 GraphQL 알아보기 <span>2018.12.05</span></li>
+        <li>feconf 2018 <span>2018.11.03</span></li>
+        <li>Typescript <span></span></li>
+      </ul>
+    </div>
   </section>
 </body>
+
 </html>
