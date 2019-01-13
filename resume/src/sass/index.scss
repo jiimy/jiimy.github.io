@@ -61,20 +61,33 @@ $text-color:#3c78d8;
 
 body {
     // vw로 변환하는 함수 생각하자
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 50px 0 20px 0;
     font-family: "Nanum Gothic", sans-serif;
+    line-height: 1.4;
+    word-break: keep-all;
 }
-
+.alert {
+    background:#dcdcdc;
+    color:black;
+    padding:7px;
+    text-align: center;
+    font-size: 12px;
+}
 .update-date {
     font-size: 13px;
     text-align: right;
 }
 .link-site {
     display: inline-block;
-    margin-left:5px;
+    margin:0 5px;
     color: $text-color;
+    font-weight: bold;
+}
+.date {
+    color:#a29393;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -88,7 +101,9 @@ section {
         text-transform: uppercase;
     }
     strong {
-        font-size: 22px;
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 20px;
         font-weight: bold;
     }
     em {
@@ -98,11 +113,16 @@ section {
     dt {
         padding-top: 15px;
         border-top: 1px solid #ccc;
-        font-size: 20px;
+        font-size: 18px;
         color: black;
         &:first-child {
             padding-top: 0;
             border-top: none;
+        }
+    }
+    dd {
+        p {
+            margin-top:10px;
         }
     }
     a {
@@ -214,9 +234,9 @@ section {
         em {
             font-size: 14px;
         }
-        ul{
-            margin:12px 0 15px 0;
-        }
+        // ul{
+        //     margin:12px 0 15px 0;
+        // }
         li {
             margin-top:5px;
         }
@@ -225,8 +245,21 @@ section {
         color:#a29393;
         font-weight: bold;
     }
+    &__project {
+        p {
+            &:before {
+                content:'└ ';
+            }
+        }
+    }
+    &__title {
+        font-weight: bold;
+    }
     &__spec {
+
+        margin-bottom:15px;
         strong {
+            margin-top:0;
             font-size: 16px;
             text-transform: uppercase;
         }
