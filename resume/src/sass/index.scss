@@ -138,6 +138,7 @@ section {
     @include clearfix();
     &__img {
         float: left;
+        width:235px;
         margin-right: 30px;
     }
     &__info {
