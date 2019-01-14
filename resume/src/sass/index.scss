@@ -90,6 +90,11 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+.u-comment {
+    &:before {
+        content:'└ ';
+    }
+}
 
 section {
     margin-bottom: 30px;
@@ -241,13 +246,7 @@ section {
         color:#a29393;
         font-weight: bold;
     }
-    &__project {
-        p {
-            &:before {
-                content:'└ ';
-            }
-        }
-    }
+
     &__title {
         font-weight: bold;
     }
@@ -259,6 +258,12 @@ section {
             font-size: 16px;
             text-transform: uppercase;
         }
+    }
+}
+
+.projects {
+    dd {
+        margin-bottom: 15px;
     }
 }
 
