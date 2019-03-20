@@ -241,9 +241,9 @@ section {
     } // ul{
     //     margin:12px 0 15px 0;
     // }
-    li {
-      margin-top: 5px;
-    }
+    // li {
+    //   margin-top: 5px;
+    // }
   }
   dt {
     font-weight: bold;
@@ -251,9 +251,12 @@ section {
   }
   &__title {
     font-weight: bold;
+    &:first-child {
+      margin-top: 5px;
+    }
+    margin-top:20px;
   }
   &__spec {
-    margin-bottom: 15px;
     strong {
       margin-top: 0;
       font-size: 16px;
