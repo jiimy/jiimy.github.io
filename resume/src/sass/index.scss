@@ -274,6 +274,14 @@ section {
   }
 }
 
+footer {
+  margin:10px 0;
+  padding:8px 0;
+  background: #ccc;
+  font-size: 13px;
+  text-align: center;
+}
+
 @media screen and (max-width: 1300px) {
   body {
     width: 900px;
