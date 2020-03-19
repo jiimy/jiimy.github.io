@@ -9,10 +9,8 @@ type: page
 * content
 {:toc}
 
-<<<<<<< HEAD
 <!--## About me
 [개인 도메인](http://6thfinger.com/portpolio/)
-=======
 ## 关于我
 
 <iframe src="https://githubbadge.appspot.com/gaohaoyang?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
@@ -46,7 +44,6 @@ type: page
 * [豆瓣音乐人-浩阳的小站](https://site.douban.com/haoyangaiyinyue/)
 
 ## 关于本站
->>>>>>> 588ae839b24513484b1c438e3f0aef4b00915dfe
 
 [codepen 바로가기](https://codepen.io/rudwnok/)
 -->
