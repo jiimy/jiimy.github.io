@@ -64,7 +64,7 @@ var scssOptions = {
    * CSS의 컴파일 결과 코드스타일 지정
    * Values : nested ,expanded, compact, compressed
   */
-  outputStyle: "expanded",
+  outputStyle: "compact",
 
   /*
    * indentType (>= v3.0.0, Type : String, Default : space)
@@ -89,7 +89,7 @@ var scssOptions = {
    * sourceComments (Type : Boolean , Default : false) 
    * 컴파일 된 CSS 에 원본소스의 위치와 줄수 주석표시. 
    */
-  sourceComments: true
+  sourceComments: false
 };
 
 gulp.task("scss:compile", function () {
@@ -98,13 +98,13 @@ gulp.task("scss:compile", function () {
     .src(paths.scss)
 
     // 소스맵 초기화(소스맵을 생성)
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
 
     // SCSs 함수에 옵션값을 설정, sCSS 작성시 watch가 멈추지 않도록 logError를 설정
     .pipe(scss(scssOptions).on("error", scss.logError))
 
     // 위에서 생성한 소스맵을 사용한다.
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
 
     // 목적지(destination)을 설정
     .pipe(gulp.dest(dist + "/css"))

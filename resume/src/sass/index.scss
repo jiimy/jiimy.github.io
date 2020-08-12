@@ -22,7 +22,7 @@ $text-color: #3c78d8;
   font-weight: bold;
   color: white;
   line-height: normal;
-  text-align: center;
+  text-align: center;  
 }
 
 .skill {
@@ -138,8 +138,8 @@ section {
   }
   a {
     color: black;
-    text-decoration: unset;
-    &:hover {
+    text-decoration: unset;  
+    &:hover { 
       text-decoration: underline;
     }
   }
